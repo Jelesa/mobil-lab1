@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".SecondActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#191919"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="17dp"
+                android:text="Рекомендуется очистить"
+                android:textColor="#aaaaaa"
+                android:textSize="23dp"
+                android:textAllCaps="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/image_papka"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/papka" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/image_papka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="13dp">
+
+                    <TextView
+                        android:id="@+id/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ненужные файлы"
+                        android:textColor="#aaaaaa"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_below="@id/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="485 Мб"
+                        android:textColor="#616161"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_default"
+                    android:text="Очистка"
+                    android:textSize="14dp"
+                    android:textColor="#407fc1"
+                    android:gravity="center"
+                    android:textAllCaps="true"/>
+
+            </RelativeLayout>
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="73dp"
+            android:background="#0f0f0f" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/image_data"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/data" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/image_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="13dp">
+
+                <TextView
+                    android:id="@+id/header_data"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Данные приложений"
+                    android:textColor="#aaaaaa"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_below="@id/header_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="686 Мб"
+                    android:textColor="#616161"
+                    android:textSize="15dp"/>
+
+            </RelativeLayout>
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_default"
+                    android:text="Очистка"
+                    android:textSize="14dp"
+                    android:textColor="#407fc1"
+                    android:gravity="center"
+                    android:textAllCaps="true"/>
+
+        </RelativeLayout>
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="73dp"
+            android:background="#0f0f0f" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/image_app"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/applications" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/image_app"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="13dp">
+
+                    <TextView
+                        android:id="@+id/header_app"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="94 неиспользуемых приложения"
+                        android:textColor="#aaaaaa"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_below="@id/header_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6,01 Гб"
+                        android:textColor="#616161"
+                        android:textSize="15dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_default"
+                    android:text="Очистка"
+                    android:textSize="14dp"
+                    android:textColor="#407fc1"
+                    android:gravity="center"
+                    android:textAllCaps="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="73dp"
+                android:background="#0f0f0f" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/image_files"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/files" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/image_files"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="13dp">
+
+                    <TextView
+                        android:id="@+id/header_files"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Повторяющиеся файлы (1 группа)"
+                        android:textColor="#aaaaaa"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_below="@id/header_files"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12,43 Мб"
+                        android:textColor="#616161"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_default"
+                    android:text="Очистка"
+                    android:textSize="14dp"
+                    android:textColor="#407fc1"
+                    android:gravity="center"
+                    android:textAllCaps="true"/>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="17dp"
+            android:text="Специальная очистка"
+            android:textColor="#aaaaaa"
+            android:textSize="23dp"
+            android:textAllCaps="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="11dp"
+                    android:paddingBottom="6dp"
+                    android:text="Изображения"
+                    android:textColor="#aaaaaa"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="174 Мб"
+                    android:textColor="#616161"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/video"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="11dp"
+                    android:paddingBottom="6dp"
+                    android:text="Видео"
+                    android:textColor="#aaaaaa"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="431 Мб"
+                    android:textColor="#616161"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/music"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="11dp"
+                    android:paddingBottom="6dp"
+                    android:text="Аудио"
+                    android:textColor="#aaaaaa"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="47,48 Мб"
+                    android:textColor="#616161"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/bigfile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="11dp"
+                    android:paddingBottom="6dp"
+                    android:text="Большие файлы"
+                    android:textColor="#aaaaaa"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="431 Мб"
+                    android:textColor="#616161"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/applications"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="11dp"
+                    android:paddingBottom="6dp"
+                    android:text="Приложения"
+                    android:textColor="#aaaaaa"
+                    android:textSize="14dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19,88 Гб"
+                    android:textColor="#616161"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/packet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="11dp"
+                    android:paddingBottom="6dp"
+                    android:text="Установочные пакеты"
+                    android:textColor="#aaaaaa"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11,82 Мб"
+                    android:textColor="#616161"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="26dp"
+            android:gravity="center"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="На платформе"
+                android:textColor="#616161" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:src="@drawable/platforma" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
